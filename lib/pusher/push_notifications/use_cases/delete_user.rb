@@ -12,7 +12,7 @@ module Pusher
 
         export :delete_user, as: :delete_user
 
-        def initialize(user:)
+        def initialize(user: "")
           @user = user
           @user_id = Pusher::PushNotifications::UserId.new
 

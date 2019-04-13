@@ -12,7 +12,7 @@ module Pusher
 
         export :generate_token, as: :generate_token
 
-        def initialize(user:)
+        def initialize(user: "")
           @user = user
           @user_id = Pusher::PushNotifications::UserId.new
 

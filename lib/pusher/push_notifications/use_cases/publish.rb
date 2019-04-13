@@ -13,7 +13,7 @@ module Pusher
         export :publish, as: :publish
         export :publish_to_interests, as: :publish_to_interests
 
-        def initialize(interests:, payload: {})
+        def initialize(interests: [], payload: {})
           @interests = interests
           @payload = payload
           @user_id = Pusher::PushNotifications::UserId.new

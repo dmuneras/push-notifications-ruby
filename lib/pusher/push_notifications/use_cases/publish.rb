@@ -12,7 +12,7 @@ module Pusher
 
         export :call, as: :publish
 
-        def initialize(interests:, payload: {})
+        def initialize(interests: [], payload: {})
           valid_interest_pattern = /^(_|\-|=|@|,|\.|:|[A-Z]|[a-z]|[0-9])*$/
 
           interests.each do |interest|
